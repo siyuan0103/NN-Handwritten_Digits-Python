@@ -16,12 +16,10 @@ from nn2 import NN2
 from hms import hms
 import random
 
-# load MNIST data set, the MNIST data should be already in ./MNIST_data folder
+# load MNIST database, the MNIST data files should be already in \MNIST_data folder
 imagelib = MNIST('MNIST_data')
-imagelib.load('train')
 n_train = 60000
 X_train, y_train = imagelib.train_img[:n_train,:], imagelib.train_lab[:n_train]
-imagelib.load('test')
 n_test = 10000
 X_test, y_test = imagelib.test_img[:n_test,:], imagelib.test_lab[:n_test]
 
@@ -33,10 +31,9 @@ myNN.CheckGradient(Lambda=1)
 
 # use train_set to train the neural network with backpropagation
 start = clock()
-theta1, theta2 = myNN.Train(X_train,y_train,max_iter=10, alpha=0.3)
+theta1, theta2 = myNN.Train(X_train,y_train,max_iter=100, alpha=0.3)
 finish = clock()
-hr, mi, s = hms(finish-start)
-print "passed time is %d H, %d Min, %f S" %(hr, mi, s)
+print "The training costs %d H, %d Min, %f S" %(hms(finish-start))
 
 # use the test_set to check the accuracy of the neural network
 myNN.Test(X_test,y_test)

@@ -93,6 +93,7 @@ This method is used for plotting the image and print the label of an example.
 The `load` method is used to convert the image and label files of MNIST database into numpy arrays:
 
 **File format of image files(idx3-ubyte):**
+
 |offset|type|value|description|
 |------|-----|------|------------|
 |0000|int32|0x00000803(2051) magic number|(MSB first)|
@@ -104,6 +105,7 @@ The `load` method is used to convert the image and label files of MNIST database
 |...|...|...|...|
 
 **File format of label files(idx1-ubyte):**
+
 |offset|type|value|description|
 |------|-----|------|------------|
 |0000|int32|0x00000801(2049) magic number|(MSB first)|
@@ -113,12 +115,13 @@ The `load` method is used to convert the image and label files of MNIST database
 |...|...|...|...|
 
 **converted numpy arrays:**
-|Variable|Type|Size|description|
-|---|---|---|---|
-|`self.train_img`|uint8|60000*784|training images|
-|`self.train_lab`|int8|60000|training labels|
-|`self.test_img`|uint8|10000*784|testing images|
-|`self.test_lab`|int8|10000|testing labels|
+
+Variable|Type|Size|description
+---|---|---|---
+`self.train_img`|uint8|60000*784|training images
+`self.train_lab`|int8|60000|training labels
+`self.test_img`|uint8|10000*784|testing images
+`self.test_lab`|int8|10000|testing labels
 
 
 ## nn2.py: class `NN2()`

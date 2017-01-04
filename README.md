@@ -45,6 +45,6 @@ Then just run `main.py`. It works in following steps:
 ---
 You can find the details in de [documentation](https://github.com/siyuan0103/NN-Handwritten_Digits-Python/blob/master/Documentation.md).
 
-##Licence
+##License
 ---
 It's open source code using MIT licence.

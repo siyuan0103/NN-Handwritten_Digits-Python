@@ -2,7 +2,7 @@
 ---
 ## Overview
 ---
-It's my "Hello World" project of neural network written in Python2. A 2-layer neural network with backpropagation is programmed for handwritten digits recognition. The handwritten digits database comes from [Yann LeCun](http://yann.lecun.com/exdb/mnist/), with 60,000 training sets and 10,000 testing sets. The accuracy of this neural network after 100 iterations of training is about 87%.
+It's my "Hello World" project of neural network written in Python2. A 2-layer neural network with backpropagation is programmed for handwritten digits recognition. The handwritten digits database comes from [Yann LeCun](http://yann.lecun.com/exdb/mnist/), with 60,000 training sets and 10,000 testing sets. The accuracy of this neural network is about 87% after 100 iterations of training, and 91.5% after 300 iterations.
 
 The project includes three parts:
 

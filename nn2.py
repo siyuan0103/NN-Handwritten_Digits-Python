@@ -210,7 +210,7 @@ class NN2(object):
                 delta_J = 0
             else:
                 delta_J = J_array[i-1]-Ji
-                if abs(delta_J) < 0.0001:
+                if abs(delta_J) < 1e-6:
                     print "No.%d: J = %f, delta_J = %f, iteration stop because\
                     the difference is small enough" %(i+1, Ji, delta_J)
                     break
